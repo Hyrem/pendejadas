@@ -1,0 +1,161 @@
+MACRO 23 "abr" INV_Misc_QuestionMark
+#showtooltip Lanzamiento destrozador
+/cancelaura filotormenta
+/lanzar Actitud de batalla
+/lanzar Lanzamiento destrozador
+END
+MACRO 22 "AGONIA" Ability_Warrior_Shockwave
+/equip Agonía de sombras
+END
+MACRO 14 "ATRONAR" INV_Misc_QuestionMark
+#showtooltip Lanzamiento heroico
+/lanzar [nomodifier] Lanzamiento heroico; [modifier:ctrl, target=Tótem Nexo Terrestre] Lanzamiento heroico
+END
+MACRO 21 "aullido" INV_Misc_QuestionMark
+#showtooltip Aullido perforador
+/cancelaura mano de protección
+/cast Aullido perforador
+END
+MACRO 26 "aullido" INV_Misc_QuestionMark
+#showtooltip Aullido perforador
+/cancelaura mano de protección
+/cast Aullido perforador
+END
+MACRO 29 "bat2" INV_Misc_QuestionMark
+#showtooltip Actitud de batalla
+/lanzar Actitud de batalla
+END
+MACRO 16 "burst" INV_Misc_QuestionMark
+#showtooltip 
+/lanzar [nomodifier] Interceptar; [modifier:ctrl, target=focus] Interceptar
+/lanzar Seccionar
+END
+MACRO 15 "cargar" INV_Misc_QuestionMark
+#showtooltip Interceptar
+/startattack
+/castsequence reset=5 Actitud rabiosa, Interceptar
+END
+MACRO 34 "colerica" INV_Misc_QuestionMark
+/equipar Taladora de Gladiador colérico
+END
+MACRO 19 "DADOS" Ability_GolemStormBolt
+/dados
+END
+MACRO 33 "ddd" INV_Misc_QuestionMark
+#showtooltip Actitud rabiosa
+/lanzar Actitud rabiosa
+/equipslot 16 Agonía de Sombras
+/equipslot 17 Glorenzelg, alta hoja de la Mano de Plata
+END
+MACRO 7 "desarmar" INV_Misc_QuestionMark
+#showtooltip Desarmar
+/cast Defensive stance
+/cast disarm
+END
+MACRO 11 "desgarrar" INV_Misc_QuestionMark
+#showtooltip 
+/lanzar [nomodifier] Cargar; [modifier:ctrl, target=focus] Cargar
+/lanzar Seccionar
+END
+MACRO 4 "duelo" Ability_Creature_Disease_02
+/DADOS
+END
+MACRO 35 "enfurecido" Ability_CheapShot
+/quien
+END
+MACRO 6 "filo" INV_Misc_QuestionMark
+#showtooltip Golpes de barrido
+/lanzar Golpes de barrido
+/lanzar Furia sangrienta(Racial)
+END
+MACRO 2 "focus" Ability_Druid_Enrage
+/focus 
+END
+MACRO 3 "IN" INV_Misc_QuestionMark
+#showtooltip Intervenir
+/cast [nomodifier, target=mouseover] Intervenir; [modifier:ctrl] Actitud Rabiosa
+END
+MACRO 30 "in3" INV_Misc_QuestionMark
+#showtooltip Intervenir
+/tar Famemonzter
+/lanzar [nomodifier] Intervenir; [modifier:ctrl] Actitud Rabiosa
+END
+MACRO 18 "inter" INV_Misc_QuestionMark
+#show Ataque de la victoria
+/lanzar [nomodifier] Ataque de la victoria; [mod:ctrl] Red de tejido de Escarcha
+END
+MACRO 5 "ira" INV_Misc_QuestionMark
+#showtooltip Ira rabiosa
+/cancelaura Filotormenta
+/cancelaura Regeneración iracunda
+/lanzar Ira rabiosa
+END
+MACRO 28 "mont hord" INV_Misc_QuestionMark
+/cancelaura velocidad de los vrykuls
+/cancelaura puntería de los enanos férreos
+/lanzar Invencible
+END
+MACRO 27 "monta" INV_Misc_QuestionMark
+/cancelaura velocidad de los vrykuls
+/cancelaura puntería de los enanos férreos
+/lanzar Montura cromática
+END
+MACRO 9 "montar" INV_Misc_QuestionMark
+/cancelaura filotormenta
+/cast filotormenta
+END
+MACRO 32 "prot pve" INV_Misc_QuestionMark
+#showtooltip Actitud defensiva
+/equipar Muro glacial de la Corona de Hielo
+/lanzar Actitud defensiva
+END
+MACRO 12 "RABFURY" INV_Misc_QuestionMark
+#showtooltip Actitud rabiosa
+/lanzar Actitud rabiosa
+/equipslot 16 Agonía de Sombras
+/equipslot 17 Glorenzelg, alta hoja de la Mano de Plata
+END
+MACRO 17 "rahero" INV_Misc_QuestionMark
+/lanzar Rajar
+/lanzar Golpe heroico
+END
+MACRO 8 "represalias" INV_Misc_QuestionMark
+#showtooltip Represalias
+/castsequence Actitud de batalla, Represalias
+/usar Tabardo del Iluminado
+END
+MACRO 20 "seccionar" INV_Misc_QuestionMark
+#showtooltip atronar
+/cancelaura mano de protección
+/cast atronar
+/lanzar Golpes de barrido
+END
+MACRO 10 "sed" INV_Misc_QuestionMark
+#showtooltip desgarrar
+/startattack
+/lanzar desgarrar
+END
+MACRO 36 "SOLO" Ability_Creature_Cursed_01
+/d solo no puedes verdad pendejo
+/jaja
+END
+MACRO 1 "TORBE" INV_Misc_QuestionMark
+#showtooltip Torbellino
+/startattack
+/lanzar Torbellino
+END
+MACRO 25 "TOTEM" INV_Misc_QuestionMark
+#showtooltip disparar
+/lanzar Disparar
+/tar tótem nexo terrestre
+END
+MACRO 24 "VENDAS" INV_Misc_QuestionMark
+/startattack
+/lanzar Sed de sangre
+END
+MACRO 31 "zurra" INV_Misc_QuestionMark
+#showtooltip Embate
+/startattack
+/cast Embate
+/stopcasting
+END
