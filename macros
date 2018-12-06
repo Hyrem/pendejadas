@@ -1,266 +1,203 @@
-MACRO 23 "abr" INV_Misc_QuestionMark
+MACRO 23 quitar inmunes cancelando la filo
 #showtooltip Lanzamiento destrozador
 /cancelaura filotormenta
 /lanzar Actitud de batalla
 /lanzar Lanzamiento destrozador
-END
-MACRO 22 "AGONIA" Ability_Warrior_Shockwave
+
+
+MACRO 22 equipar arma 2 manos
 /equip Agonía de sombras
-END
-MACRO 14 "ATRONAR" INV_Misc_QuestionMark
+
+
+MACRO 14 tira lanzamiento al totem si uso ctrl sino al target
 #showtooltip Lanzamiento heroico
 /lanzar [nomodifier] Lanzamiento heroico; [modifier:ctrl, target=Tótem Nexo Terrestre] Lanzamiento heroico
-END
-MACRO 21 "aullido" INV_Misc_QuestionMark
+
+
+MACRO 21 usa aullido y me quita mano de protección
 #showtooltip Aullido perforador
 /cancelaura mano de protección
 /cast Aullido perforador
-END
-MACRO 26 "aullido" INV_Misc_QuestionMark
-#showtooltip Aullido perforador
-/cancelaura mano de protección
-/cast Aullido perforador
-END
-MACRO 29 "bat2" INV_Misc_QuestionMark
-#showtooltip Actitud de batalla
-/lanzar Actitud de batalla
-END
-MACRO 16 "burst" INV_Misc_QuestionMark
-#showtooltip 
-/lanzar [nomodifier] Interceptar; [modifier:ctrl, target=focus] Interceptar
-/lanzar Seccionar
-END
-MACRO 15 "cargar" INV_Misc_QuestionMark
-#showtooltip Interceptar
-/startattack
-/castsequence reset=5 Actitud rabiosa, Interceptar
-END
-MACRO 34 "colerica" INV_Misc_QuestionMark
-/equipar Taladora de Gladiador colérico
-END
-MACRO 19 "DADOS" Ability_GolemStormBolt
-/dados
-END
-MACRO 33 "ddd" INV_Misc_QuestionMark
-#showtooltip Actitud rabiosa
-/lanzar Actitud rabiosa
-/equipslot 16 Agonía de Sombras
-/equipslot 17 Glorenzelg, alta hoja de la Mano de Plata
-END
-MACRO 7 "desarmar" INV_Misc_QuestionMark
+
+
+MACRO 7 desarmar
 #showtooltip Desarmar
 /cast Defensive stance
 /cast disarm
-END
-MACRO 11 "desgarrar" INV_Misc_QuestionMark
-#showtooltip 
-/lanzar [nomodifier] Cargar; [modifier:ctrl, target=focus] Cargar
-/lanzar Seccionar
-END
-MACRO 4 "duelo" Ability_Creature_Disease_02
-/DADOS
-END
-MACRO 35 "enfurecido" Ability_CheapShot
-/quien
-END
-MACRO 6 "filo" INV_Misc_QuestionMark
-#showtooltip Golpes de barrido
-/lanzar Golpes de barrido
-/lanzar Furia sangrienta(Racial)
-END
-MACRO 2 "focus" Ability_Druid_Enrage
-/focus 
-END
-MACRO 3 "IN" INV_Misc_QuestionMark
+
+
+
+MACRO 3 INTERVIENE AL QUE TENGA EN mouse si uso control cambio a actitud rabiosa
 #showtooltip Intervenir
 /cast [nomodifier, target=mouseover] Intervenir; [modifier:ctrl] Actitud Rabiosa
-END
-MACRO 30 "in3" INV_Misc_QuestionMark
+
+
+
+MACRO 30 intervenir a mi compa si uso control actitud rabiosa
 #showtooltip Intervenir
 /tar Famemonzter
 /lanzar [nomodifier] Intervenir; [modifier:ctrl] Actitud Rabiosa
-END
-MACRO 18 "inter" INV_Misc_QuestionMark
-#show Ataque de la victoria
-/lanzar [nomodifier] Ataque de la victoria; [mod:ctrl] Red de tejido de Escarcha
-END
-MACRO 5 "ira" INV_Misc_QuestionMark
+
+
+MACRO 5 usa ira rabiosa 
 #showtooltip Ira rabiosa
 /cancelaura Filotormenta
 /cancelaura Regeneración iracunda
 /lanzar Ira rabiosa
-END
-MACRO 28 "mont hord" INV_Misc_QuestionMark
+
+MACRO 5 usa temeridad, si ya me estoy curando elimina regeneración iracunda
+#showtooltip temeridad
+/cancelaura Filotormenta
+/cancelaura Regeneración iracunda
+/lanzar temeridad
+
+
+MACRO 28 cancelar auras de testa y usar montura
 /cancelaura velocidad de los vrykuls
 /cancelaura puntería de los enanos férreos
 /lanzar Invencible
-END
-MACRO 27 "monta" INV_Misc_QuestionMark
-/cancelaura velocidad de los vrykuls
-/cancelaura puntería de los enanos férreos
-/lanzar Montura cromática
-END
-MACRO 9 "montar" INV_Misc_QuestionMark
+
+
+MACRO 9 tira filotormenta
 /cancelaura filotormenta
 /cast filotormenta
-END
-MACRO 32 "prot pve" INV_Misc_QuestionMark
-#showtooltip Actitud defensiva
-/equipar Muro glacial de la Corona de Hielo
-/lanzar Actitud defensiva
-END
-MACRO 12 "RABFURY" INV_Misc_QuestionMark
-#showtooltip Actitud rabiosa
-/lanzar Actitud rabiosa
-/equipslot 16 Agonía de Sombras
-/equipslot 17 Glorenzelg, alta hoja de la Mano de Plata
-END
-MACRO 17 "rahero" INV_Misc_QuestionMark
-/lanzar Rajar
-/lanzar Golpe heroico
-END
-MACRO 8 "represalias" INV_Misc_QuestionMark
+
+
+MACRO 8 "represalias" 
 #showtooltip Represalias
 /castsequence Actitud de batalla, Represalias
-/usar Tabardo del Iluminado
-END
-MACRO 20 "seccionar" INV_Misc_QuestionMark
-#showtooltip atronar
-/cancelaura mano de protección
-/cast atronar
-/lanzar Golpes de barrido
-END
+
+
+
 MACRO 10 "sed" INV_Misc_QuestionMark
 #showtooltip desgarrar
 /startattack
 /lanzar desgarrar
-END
-MACRO 36 "SOLO" Ability_Creature_Cursed_01
-/d solo no puedes verdad pendejo
-/jaja
-END
+
+
+
 MACRO 1 "TORBE" INV_Misc_QuestionMark
 #showtooltip Torbellino
 /startattack
 /lanzar Torbellino
-END
-MACRO 25 "TOTEM" INV_Misc_QuestionMark
+
+
+MACRO 25 "TOTEM" 
 #showtooltip disparar
 /lanzar Disparar
 /tar tótem nexo terrestre
-END
-MACRO 24 "VENDAS" INV_Misc_QuestionMark
-/startattack
-/lanzar Sed de sangre
-END
-MACRO 31 "zurra" INV_Misc_QuestionMark
-#showtooltip Embate
-/startattack
-/cast Embate
-/stopcasting
-END
+
+
 
 
 
 
 OTRASSSS MASSSSS
 
-MACRO 16777231 "AZOTE" INV_Misc_QuestionMark
+MACRO 16777231 usa azote en target, si uso control azote al focus, se puede usar desde cualquier actitud
 #show Azote de escudo
 /cancelaura Filotormenta
 /equipar Hacha de mano de Gladiador colérico
 /equipar Escudo muro de Gladiador colérico
 /cast [stance:1/2, mod:ctrl, target=focus] Azote de escudo; [stance:3] Actitud de batalla; Azote de escudo
-END
-MACRO 16777223 "BAT" INV_Misc_QuestionMark
+
+
+MACRO 16777223 paso a batalla y equipo arma de 2 manos
 #showtooltip Actitud de batalla
 /lanzar Actitud de batalla
 /equipar Agonía de sombras
-END
-MACRO 16777217 "cargar" INV_Misc_QuestionMark
+
+
+MACRO 16777217 uso cargar si esta lejos al target, con control al focus y de cerca seccionar, aunque este en filotormenta
 #showtooltip Cargar
 /cancelaura Filotormenta
 /startattack
 /cast Seccionar
 /cast [nomodifier] Cargar; [mod:ctrl, target=focus] Cargar
-END
-MACRO 16777228 "CURA" INV_Misc_QuestionMark
+
+
+MACRO 16777228 "CURA" 
 #showtooltip Regeneración iracunda
 /usar Furia de maestro de batalla
 /lanzar Última carga
 /lanzar Regeneración iracunda
 /usar Piedra de salud vil
-END
-MACRO 16777225 "DEF" INV_Misc_QuestionMark
+
+
+
+MACRO 16777225 DEFENSIVA
 #showtooltip Actitud defensiva
 /equipar Hacha de mano de Gladiador colérico
 /equipar Escudo muro de Gladiador colérico
 /cast Actitud defensiva
-END
-MACRO 16777230 "DESARM" INV_Misc_QuestionMark
+
+
+MACRO 16777230 "DESARM" esta es mas eficiente porque se puede usar desde cualquier actitud
 #showtooltip Desarmar
 /cast [stance:2] Desarmar; [stance:1/3] Actitud defensiva;  Desarmar
 /cast [mod:ctrl,@focus,exist] Desarmar
-END
-MACRO 16777219 "DESG" INV_Misc_QuestionMark
+
+
+MACRO 16777219 "DESG" 
 #showtooltip Desgarrar
 /startattack
 /cast desgarrar
-END
-MACRO 16777229 "DESTRO" Ability_Ambush
-/script LeaveBattlefield()
-END
-MACRO 16777232 "embate" INV_Misc_QuestionMark
+
+
+MACRO 16777232 "embate" 
 #showtooltip Embate con escudo
 /CANCELAURA Filotormenta
 /equipar Hacha de mano de Gladiador colérico
 /equipar Escudo muro de Gladiador colérico
 /cast Embate con escudo
-END
-MACRO 16777220 "fear" INV_Misc_QuestionMark
+
+
+MACRO 16777220 "fear" tira fear y cancela barrido para no romperlo
 #showtooltip Grito intimidador
 /cancelaura Golpes de barrido
 /cast Grito intimidador
-END
-MACRO 16777222 "FILO" INV_Misc_QuestionMark
+/stopattack
+
+
+MACRO 16777222 "FILO" 
 #showtooltip Filotormenta
 /cancelaura Filotormenta
 /lanzar Filotormenta
-END
-MACRO 16777226 "INTER" INV_Misc_QuestionMark
+
+
+MACRO 16777226 "INTER" interceptar al target, si uso ctrl intercepta al focus y si estoy cerca uso seccionar
 #showtooltip Interceptar
 /startattack
 /cast Seccionar
 /cast [nomodifier] Interceptar; [modifier:ctrl, target=focus] Interceptar
-END
-MACRO 16777227 "ira" INV_Misc_QuestionMark
-#showtooltip Ira rabiosa
-/cancelaura Regeneración iracunda
-/cast Ira rabiosa
-END
-MACRO 16777218 "MORTAL" INV_Misc_QuestionMark
+
+
+MACRO 16777218 "MORTAL" 
 #showtooltip Golpe mortal
 /startattack
 /cast Golpe mortal
-END
-MACRO 16777234 "OP" INV_Misc_QuestionMark
+
+
+MACRO 16777234 "OP" overpower al focus o al target usando control
 #showtooltip  abrumar
 /cast [nomodifier] Abrumar; [mod:ctrl, target=focus] Abrumar
-END
-MACRO 16777224 "rab" INV_Misc_QuestionMark
+
+
+MACRO 16777224 "rab" cambio a furiosa con otra arma de más temple
 #showtooltip Actitud rabiosa
 /cast Berserker Stance
 /equip Taladora de Gladiador colérico
-END
-MACRO 16777233 "reflejo" INV_Misc_QuestionMark
+
+
+MACRO 16777233 "reflejo" se usa desde cualquier actitud, si lo oprimo despues de activar el buff lo cancelo, útil contra magos.
 #showtooltip Reflejo de hechizos
 /cancelaura Reflejo de hechizos
 /cast [stance:1/2,equipped:Shield] Reflejo de hechizos; [stance:3] Actitud de batalla; Reflejo de hechizos
 /equip Hacha de mano de Gladiador colérico
 /equip Escudo muro de Gladiador colérico
-END
-MACRO 16777221 "repre" INV_Misc_QuestionMark
+
+
+MACRO 16777221 "repre" otra que se puede usar desde cualquier actitud más eficiente que la anterior
 #showtooltip Represalias
 /cancelaura Filotormenta
 /cast [stance:1] Represalias; [stance:2/3]Actitud de batalla; Represalias
-END
