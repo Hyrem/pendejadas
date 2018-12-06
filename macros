@@ -159,3 +159,108 @@ MACRO 31 "zurra" INV_Misc_QuestionMark
 /cast Embate
 /stopcasting
 END
+
+
+
+
+OTRASSSS MASSSSS
+
+MACRO 16777231 "AZOTE" INV_Misc_QuestionMark
+#show Azote de escudo
+/cancelaura Filotormenta
+/equipar Hacha de mano de Gladiador colérico
+/equipar Escudo muro de Gladiador colérico
+/cast [stance:1/2, mod:ctrl, target=focus] Azote de escudo; [stance:3] Actitud de batalla; Azote de escudo
+END
+MACRO 16777223 "BAT" INV_Misc_QuestionMark
+#showtooltip Actitud de batalla
+/lanzar Actitud de batalla
+/equipar Agonía de sombras
+END
+MACRO 16777217 "cargar" INV_Misc_QuestionMark
+#showtooltip Cargar
+/cancelaura Filotormenta
+/startattack
+/cast Seccionar
+/cast [nomodifier] Cargar; [mod:ctrl, target=focus] Cargar
+END
+MACRO 16777228 "CURA" INV_Misc_QuestionMark
+#showtooltip Regeneración iracunda
+/usar Furia de maestro de batalla
+/lanzar Última carga
+/lanzar Regeneración iracunda
+/usar Piedra de salud vil
+END
+MACRO 16777225 "DEF" INV_Misc_QuestionMark
+#showtooltip Actitud defensiva
+/equipar Hacha de mano de Gladiador colérico
+/equipar Escudo muro de Gladiador colérico
+/cast Actitud defensiva
+END
+MACRO 16777230 "DESARM" INV_Misc_QuestionMark
+#showtooltip Desarmar
+/cast [stance:2] Desarmar; [stance:1/3] Actitud defensiva;  Desarmar
+/cast [mod:ctrl,@focus,exist] Desarmar
+END
+MACRO 16777219 "DESG" INV_Misc_QuestionMark
+#showtooltip Desgarrar
+/startattack
+/cast desgarrar
+END
+MACRO 16777229 "DESTRO" Ability_Ambush
+/script LeaveBattlefield()
+END
+MACRO 16777232 "embate" INV_Misc_QuestionMark
+#showtooltip Embate con escudo
+/CANCELAURA Filotormenta
+/equipar Hacha de mano de Gladiador colérico
+/equipar Escudo muro de Gladiador colérico
+/cast Embate con escudo
+END
+MACRO 16777220 "fear" INV_Misc_QuestionMark
+#showtooltip Grito intimidador
+/cancelaura Golpes de barrido
+/cast Grito intimidador
+END
+MACRO 16777222 "FILO" INV_Misc_QuestionMark
+#showtooltip Filotormenta
+/cancelaura Filotormenta
+/lanzar Filotormenta
+END
+MACRO 16777226 "INTER" INV_Misc_QuestionMark
+#showtooltip Interceptar
+/startattack
+/cast Seccionar
+/cast [nomodifier] Interceptar; [modifier:ctrl, target=focus] Interceptar
+END
+MACRO 16777227 "ira" INV_Misc_QuestionMark
+#showtooltip Ira rabiosa
+/cancelaura Regeneración iracunda
+/cast Ira rabiosa
+END
+MACRO 16777218 "MORTAL" INV_Misc_QuestionMark
+#showtooltip Golpe mortal
+/startattack
+/cast Golpe mortal
+END
+MACRO 16777234 "OP" INV_Misc_QuestionMark
+#showtooltip  abrumar
+/cast [nomodifier] Abrumar; [mod:ctrl, target=focus] Abrumar
+END
+MACRO 16777224 "rab" INV_Misc_QuestionMark
+#showtooltip Actitud rabiosa
+/cast Berserker Stance
+/equip Taladora de Gladiador colérico
+END
+MACRO 16777233 "reflejo" INV_Misc_QuestionMark
+#showtooltip Reflejo de hechizos
+/cancelaura Reflejo de hechizos
+/cast [stance:1/2,equipped:Shield] Reflejo de hechizos; [stance:3] Actitud de batalla; Reflejo de hechizos
+/equip Hacha de mano de Gladiador colérico
+/equip Escudo muro de Gladiador colérico
+END
+MACRO 16777221 "repre" INV_Misc_QuestionMark
+#showtooltip Represalias
+/cancelaura Filotormenta
+/cast [stance:1] Represalias; [stance:2/3]Actitud de batalla; Represalias
+END
